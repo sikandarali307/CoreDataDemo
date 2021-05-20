@@ -14,6 +14,12 @@
 		FABB77B526566864002FCC35 /* CoreDataDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FABB77B326566864002FCC35 /* CoreDataDemo.xcdatamodeld */; };
 		FABB77B726566865002FCC35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABB77B626566865002FCC35 /* Assets.xcassets */; };
 		FABB77BA26566865002FCC35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABB77B826566865002FCC35 /* LaunchScreen.storyboard */; };
+		FABB77C4265668D7002FCC35 /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB77C2265668D7002FCC35 /* Student+CoreDataClass.swift */; };
+		FABB77C5265668D7002FCC35 /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB77C3265668D7002FCC35 /* Student+CoreDataProperties.swift */; };
+		FABB77C926566A93002FCC35 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FABB77C826566A92002FCC35 /* CoreData.framework */; };
+		FABB77CC26566CBB002FCC35 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB77CB26566CBB002FCC35 /* DatabaseHelper.swift */; };
+		FABB77CF265675B4002FCC35 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB77CE265675B4002FCC35 /* ListViewController.swift */; };
+		FABB77D2265675CD002FCC35 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB77D1265675CD002FCC35 /* ListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		FABB77B626566865002FCC35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FABB77B926566865002FCC35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FABB77BB26566865002FCC35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FABB77C2265668D7002FCC35 /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FABB77C3265668D7002FCC35 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FABB77C826566A92002FCC35 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FABB77CB26566CBB002FCC35 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		FABB77CE265675B4002FCC35 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		FABB77D1265675CD002FCC35 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FABB77C926566A93002FCC35 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +55,11 @@
 		FABB779E26566864002FCC35 = {
 			isa = PBXGroup;
 			children = (
+				FABB77C2265668D7002FCC35 /* Student+CoreDataClass.swift */,
+				FABB77C3265668D7002FCC35 /* Student+CoreDataProperties.swift */,
 				FABB77A926566864002FCC35 /* CoreDataDemo */,
 				FABB77A826566864002FCC35 /* Products */,
+				FABB77C726566A92002FCC35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +77,9 @@
 				FABB77AA26566864002FCC35 /* AppDelegate.swift */,
 				FABB77AC26566864002FCC35 /* SceneDelegate.swift */,
 				FABB77AE26566864002FCC35 /* ViewController.swift */,
+				FABB77CB26566CBB002FCC35 /* DatabaseHelper.swift */,
+				FABB77CE265675B4002FCC35 /* ListViewController.swift */,
+				FABB77D1265675CD002FCC35 /* ListTableViewCell.swift */,
 				FABB77B026566864002FCC35 /* Main.storyboard */,
 				FABB77B626566865002FCC35 /* Assets.xcassets */,
 				FABB77B826566865002FCC35 /* LaunchScreen.storyboard */,
@@ -68,6 +87,14 @@
 				FABB77B326566864002FCC35 /* CoreDataDemo.xcdatamodeld */,
 			);
 			path = CoreDataDemo;
+			sourceTree = "<group>";
+		};
+		FABB77C726566A92002FCC35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FABB77C826566A92002FCC35 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,10 +167,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FABB77C5265668D7002FCC35 /* Student+CoreDataProperties.swift in Sources */,
 				FABB77AF26566864002FCC35 /* ViewController.swift in Sources */,
 				FABB77B526566864002FCC35 /* CoreDataDemo.xcdatamodeld in Sources */,
+				FABB77CC26566CBB002FCC35 /* DatabaseHelper.swift in Sources */,
 				FABB77AB26566864002FCC35 /* AppDelegate.swift in Sources */,
+				FABB77D2265675CD002FCC35 /* ListTableViewCell.swift in Sources */,
 				FABB77AD26566864002FCC35 /* SceneDelegate.swift in Sources */,
+				FABB77CF265675B4002FCC35 /* ListViewController.swift in Sources */,
+				FABB77C4265668D7002FCC35 /* Student+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
